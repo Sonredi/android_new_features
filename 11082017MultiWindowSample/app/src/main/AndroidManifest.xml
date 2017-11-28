@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jacp.a11082017multiwindowsample">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <layout android:defaultHeight="300dp"
+                android:defaultWidth="300dp"
+                android:gravity="right"
+                android:minHeight="200dp"
+                android:minWidth="200dp" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DetailActivity">
+            <layout android:defaultHeight="300dp"
+                android:defaultWidth="600dp"
+                android:gravity="start"
+                android:minHeight="200dp"
+                android:minWidth="200dp" />
+        </activity>
+    </application>
+
+</manifest>
